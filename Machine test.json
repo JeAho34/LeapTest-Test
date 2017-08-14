@@ -1,0 +1,3322 @@
+{
+  "$id": "1",
+  "Flowchart": {
+    "$id": "2",
+    "Version": "2.19",
+    "BuildingBlockMs": [
+      {
+        "$id": "3",
+        "$type": "LeapTest.Models.Models.BuildingBlocks.Miscellaneous.StartBuildingBlockM, LeapTest.Models",
+        "Position": "5000,5000",
+        "FlowProperties": [
+          {
+            "$id": "4",
+            "$type": "LeapTest.Models.Models.FlowProperties.HeaderFlowProperty, LeapTest.Models",
+            "Title": "Start",
+            "Key": "Header",
+            "PropertyType": "Execution",
+            "ParentBuildingBlock": {
+              "$ref": "3"
+            },
+            "OutputConnector": {
+              "$id": "5",
+              "ParentFlowPropertyM": {
+                "$ref": "4"
+              },
+              "connectedIds": [
+                {
+                  "$id": "6",
+                  "Item1": "0e1f69d3-bf88-46dd-aca5-27f6484b307a",
+                  "Item2": "7c68acc6-2a31-464a-adbb-63a1a72f9f4e"
+                }
+              ],
+              "Id": "e8e64d81-35c2-4ffc-8bfe-c685e299c212"
+            },
+            "CanHaveValue": false,
+            "Id": "8f813571-6b08-452a-afb7-34914884222f"
+          },
+          {
+            "$id": "7",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+            "DictionaryKey": "StartAction",
+            "Key": "StartAction",
+            "IsMain": true,
+            "ParentBuildingBlock": {
+              "$ref": "3"
+            },
+            "EditorValue": {
+              "$id": "8",
+              "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+              "Value": "Minimize"
+            },
+            "DefaultValue": {
+              "$id": "9",
+              "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+              "Value": "NoAction"
+            },
+            "Id": "08771baf-9de3-4d26-8451-ce2c8aa6dd51"
+          }
+        ],
+        "Height": 84.0,
+        "Width": 150.0,
+        "Title": "Start",
+        "CreatedAt": "2017-08-11T08:06:59.771142",
+        "ModifiedAt": "2017-08-11T08:06:59.771142",
+        "Id": "f17bd483-f6bd-42e3-a803-97a131796208"
+      },
+      {
+        "$id": "10",
+        "$type": "LeapTest.Models.Models.BuildingBlocks.Mouse.ClickImageBuildingBlockM, LeapTest.Models",
+        "Position": "5400,5000",
+        "FlowProperties": [
+          {
+            "$id": "11",
+            "$type": "LeapTest.Models.Models.FlowProperties.HeaderFlowProperty, LeapTest.Models",
+            "Title": "Click image",
+            "Key": "Header",
+            "PropertyType": "Execution",
+            "ParentBuildingBlock": {
+              "$ref": "10"
+            },
+            "InputConnector": {
+              "$id": "12",
+              "ParentFlowPropertyM": {
+                "$ref": "11"
+              },
+              "Direction": "Input",
+              "connectedIds": [
+                {
+                  "$id": "13",
+                  "Item1": "0e1f69d3-bf88-46dd-aca5-27f6484b307a",
+                  "Item2": "0541290b-4049-4da3-8c90-a9f1b1388dc0"
+                }
+              ],
+              "Id": "0f0e07e5-4bda-4c11-9d8a-74c8501f6677"
+            },
+            "OutputConnector": {
+              "$id": "14",
+              "ParentFlowPropertyM": {
+                "$ref": "11"
+              },
+              "connectedIds": [
+                {
+                  "$id": "15",
+                  "Item1": "1db2ae6d-d5a3-46f7-8360-99c00975c100",
+                  "Item2": "4c6cb44b-87b0-4cf6-888c-409af882489f"
+                }
+              ],
+              "Id": "a9eec8e2-101a-4370-a4e0-8bd11f3c082c"
+            },
+            "CanHaveValue": false,
+            "Id": "62716f31-e3b7-419a-abc8-1d1c689542b6"
+          },
+          {
+            "$id": "16",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.ImageFlowProperty, LeapTest.Models",
+            "Key": "Image",
+            "IsMain": true,
+            "ParentBuildingBlock": {
+              "$ref": "10"
+            },
+            "InputConnector": {
+              "$id": "17",
+              "ParentFlowPropertyM": {
+                "$ref": "16"
+              },
+              "Direction": "Input",
+              "Id": "b82f9dfa-d221-4d41-a1e5-9bc87cd1c32c"
+            },
+            "OutputConnector": {
+              "$id": "18",
+              "ParentFlowPropertyM": {
+                "$ref": "16"
+              },
+              "Id": "5dbce6f5-000f-42e8-8bb4-04f7b45bb184"
+            },
+            "EditorValue": {
+              "$id": "19",
+              "$type": "LeapTest.Models.Models.LDataTypes.LImage, LeapTest.Models",
+              "ClickPoint": "59,27",
+              "Value": "758780b4-0086-4e2a-a22d-1926b2d98b51"
+            },
+            "Id": "a8e98932-5754-45af-abff-4beb7129ef39"
+          },
+          {
+            "$id": "20",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+            "DictionaryKey": "MouseButtons",
+            "Key": "MouseButton",
+            "ParentBuildingBlock": {
+              "$ref": "10"
+            },
+            "EditorValue": {
+              "$id": "21",
+              "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+              "Value": "Left"
+            },
+            "DefaultValue": {
+              "$ref": "21"
+            },
+            "Id": "c42d51f2-6f4b-46ed-a670-231b4c6bd617"
+          },
+          {
+            "$id": "22",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+            "DictionaryKey": "MouseSpeed",
+            "Key": "MouseSpeed",
+            "ParentBuildingBlock": {
+              "$ref": "10"
+            },
+            "EditorValue": {
+              "$id": "23",
+              "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+              "Value": "Medium"
+            },
+            "DefaultValue": {
+              "$ref": "23"
+            },
+            "Id": "ed552843-6c46-4cdb-9b5d-16a8962e54a2"
+          },
+          {
+            "$id": "24",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.SignalFlowProperty, LeapTest.Models",
+            "Key": "NotFound",
+            "PropertyType": "Execution",
+            "ParentBuildingBlock": {
+              "$ref": "10"
+            },
+            "OutputConnector": {
+              "$id": "25",
+              "ParentFlowPropertyM": {
+                "$ref": "24"
+              },
+              "Id": "6f3620ee-ce65-47b8-8ec6-fcf15d94da68"
+            },
+            "CanHaveValue": false,
+            "Id": "88be0832-3edf-4b37-80d3-65404f4ee4b0"
+          },
+          {
+            "$id": "26",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+            "FlowProperties": [
+              {
+                "$id": "27",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                "IsResult": true,
+                "Key": "Position",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "26"
+                },
+                "OutputConnector": {
+                  "$id": "28",
+                  "ParentFlowPropertyM": {
+                    "$ref": "27"
+                  },
+                  "Id": "10e2940f-ca9e-4a14-bf39-bc151eef2577"
+                },
+                "Id": "d564ac01-9507-4a03-8f43-ad1bb2af8a21"
+              },
+              {
+                "$id": "29",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                "Key": "X",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "26"
+                },
+                "OutputConnector": {
+                  "$id": "30",
+                  "ParentFlowPropertyM": {
+                    "$ref": "29"
+                  },
+                  "Id": "d5edc200-4dd5-425f-aa57-6ac98d81b7f4"
+                },
+                "Id": "ea497926-c246-4993-823f-89ca17bda51e"
+              },
+              {
+                "$id": "31",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                "Key": "Y",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "26"
+                },
+                "OutputConnector": {
+                  "$id": "32",
+                  "ParentFlowPropertyM": {
+                    "$ref": "31"
+                  },
+                  "Id": "146d1f6e-2aea-4fe3-8e43-cbaf13e34327"
+                },
+                "Id": "e944775f-2126-4a70-9fad-f23748e0527d"
+              }
+            ],
+            "Key": "ResultPositionBlock",
+            "ParentBuildingBlock": {
+              "$ref": "10"
+            },
+            "Id": "eb94ffeb-5d7d-4c42-a915-cec5fca4a8aa"
+          },
+          {
+            "$id": "33",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.AreaBlockFlowProperty, LeapTest.Models",
+            "FlowProperties": [
+              {
+                "$id": "34",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.AreaFlowProperty, LeapTest.Models",
+                "IsResult": true,
+                "Key": "Area",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "33"
+                },
+                "OutputConnector": {
+                  "$id": "35",
+                  "ParentFlowPropertyM": {
+                    "$ref": "34"
+                  },
+                  "Id": "5fea3d80-98e1-4919-8b87-893981482106"
+                },
+                "Id": "6c2e242b-35a1-4d32-904d-f17334fbe1d2"
+              },
+              {
+                "$id": "36",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "37",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                    "IsResult": true,
+                    "Key": "Position",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "36"
+                    },
+                    "OutputConnector": {
+                      "$id": "38",
+                      "ParentFlowPropertyM": {
+                        "$ref": "37"
+                      },
+                      "Id": "41bcefc0-d989-4b08-8f7b-bb6531d72123"
+                    },
+                    "Id": "8983f545-db39-477e-9aa9-2dda9019766e"
+                  },
+                  {
+                    "$id": "39",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                    "Key": "X",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "36"
+                    },
+                    "OutputConnector": {
+                      "$id": "40",
+                      "ParentFlowPropertyM": {
+                        "$ref": "39"
+                      },
+                      "Id": "e7b1f649-aceb-4b33-bafe-0ecf96b7e008"
+                    },
+                    "Id": "7f28ad31-0a52-4c54-a857-6215faea13f7"
+                  },
+                  {
+                    "$id": "41",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                    "Key": "Y",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "36"
+                    },
+                    "OutputConnector": {
+                      "$id": "42",
+                      "ParentFlowPropertyM": {
+                        "$ref": "41"
+                      },
+                      "Id": "1ced53db-d31e-462e-be31-5f4a79d1de2b"
+                    },
+                    "Id": "388ccb14-1d46-4b12-a26f-387b1aad0b3f"
+                  }
+                ],
+                "Key": "Position",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "33"
+                },
+                "Id": "fc1896b9-3a72-4f56-94b0-677f50b4491a"
+              },
+              {
+                "$id": "43",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "44",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                    "IsResult": true,
+                    "CaptureType": "Rectangle",
+                    "Key": "Position",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "43"
+                    },
+                    "OutputConnector": {
+                      "$id": "45",
+                      "ParentFlowPropertyM": {
+                        "$ref": "44"
+                      },
+                      "Id": "77787a20-6112-4d33-9bf9-ebb1326b9b8f"
+                    },
+                    "Id": "b7b646e7-ca3e-4159-88aa-785d3cf7c1c3"
+                  },
+                  {
+                    "$id": "46",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                    "Key": "X",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "43"
+                    },
+                    "OutputConnector": {
+                      "$id": "47",
+                      "ParentFlowPropertyM": {
+                        "$ref": "46"
+                      },
+                      "Id": "12a2b602-f31b-4fc3-947a-62e7b01a8547"
+                    },
+                    "Id": "a7ae354a-2360-485a-9406-2c42d815b04b"
+                  },
+                  {
+                    "$id": "48",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                    "Key": "Y",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "43"
+                    },
+                    "OutputConnector": {
+                      "$id": "49",
+                      "ParentFlowPropertyM": {
+                        "$ref": "48"
+                      },
+                      "Id": "1c4549d3-fd54-4092-a529-1244f416bee5"
+                    },
+                    "Id": "908a15ca-9e18-4a63-a671-764822a3e26e"
+                  }
+                ],
+                "Key": "Size",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "33"
+                },
+                "Id": "0215f8de-d57e-4932-a323-e99e8b1f3d9a"
+              }
+            ],
+            "Key": "ResultAreaBlock",
+            "ParentBuildingBlock": {
+              "$ref": "10"
+            },
+            "Id": "543fa585-194a-49d7-8829-87d9d2e409aa"
+          },
+          {
+            "$id": "50",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.ImagePrecisionBlockFlowProperty, LeapTest.Models",
+            "IsExpanded": true,
+            "FlowProperties": [
+              {
+                "$id": "51",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.ImagePixelsPrecisionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "52",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+                    "DictionaryKey": "ImageRecognitionPixelPrecisions",
+                    "Key": "PixelsPrecision",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "51"
+                    },
+                    "EditorValue": {
+                      "$id": "53",
+                      "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                      "Value": "PixelPerfect"
+                    },
+                    "DefaultValue": {
+                      "$id": "54",
+                      "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                      "Value": "PixelPerfect"
+                    },
+                    "Id": "08cca3d4-e64f-49b7-89de-4412e9109537"
+                  }
+                ],
+                "Key": "ImagePixelsPrecision",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "50"
+                },
+                "Id": "b4cbd3a1-0c4a-4602-a24c-32df09ba903a"
+              },
+              {
+                "$id": "55",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.ImageColorPrecisionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "56",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+                    "DictionaryKey": "ImageRecognitionColorPrecisions",
+                    "Key": "ColorPrecision",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "55"
+                    },
+                    "EditorValue": {
+                      "$id": "57",
+                      "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                      "Value": "High"
+                    },
+                    "DefaultValue": {
+                      "$id": "58",
+                      "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                      "Value": "PixelPerfect"
+                    },
+                    "Id": "33c2b66a-1a0b-4ce9-8c0d-5a74f17db45f"
+                  }
+                ],
+                "Key": "ImageColorPrecision",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "50"
+                },
+                "Id": "8d16b12d-30e6-47b0-bc92-70a42fddb7c4"
+              }
+            ],
+            "Key": "ImagePrecision",
+            "ParentBuildingBlock": {
+              "$ref": "10"
+            },
+            "CanHaveValue": false,
+            "Id": "0bc3a1c3-0da1-4c91-aa04-0f4738cba767"
+          },
+          {
+            "$id": "59",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.AreaBlockFlowProperty, LeapTest.Models",
+            "FlowProperties": [
+              {
+                "$id": "60",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.AreaFlowProperty, LeapTest.Models",
+                "Key": "Area",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "59"
+                },
+                "InputConnector": {
+                  "$id": "61",
+                  "ParentFlowPropertyM": {
+                    "$ref": "60"
+                  },
+                  "Direction": "Input",
+                  "Id": "d1be5e54-9f8a-453f-9b06-cb06b1d1ac7b"
+                },
+                "OutputConnector": {
+                  "$id": "62",
+                  "ParentFlowPropertyM": {
+                    "$ref": "60"
+                  },
+                  "Id": "41e1bd1c-7ba9-450e-9128-d2b683282765"
+                },
+                "Id": "54ea0fe9-3f82-4d84-b317-dbdd9980c767"
+              },
+              {
+                "$id": "63",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "64",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                    "Key": "Position",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "63"
+                    },
+                    "InputConnector": {
+                      "$id": "65",
+                      "ParentFlowPropertyM": {
+                        "$ref": "64"
+                      },
+                      "Direction": "Input",
+                      "Id": "31d7575c-8c6f-4ad2-a0a2-51948201f974"
+                    },
+                    "OutputConnector": {
+                      "$id": "66",
+                      "ParentFlowPropertyM": {
+                        "$ref": "64"
+                      },
+                      "Id": "a92d92d0-5c65-4b65-b463-c14811484c7d"
+                    },
+                    "Id": "a0b1a463-6498-40bc-b373-3b20497029cf"
+                  },
+                  {
+                    "$id": "67",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                    "Key": "X",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "63"
+                    },
+                    "InputConnector": {
+                      "$id": "68",
+                      "ParentFlowPropertyM": {
+                        "$ref": "67"
+                      },
+                      "Direction": "Input",
+                      "Id": "d2eb3fe6-03c0-431a-a469-16404a93c958"
+                    },
+                    "OutputConnector": {
+                      "$id": "69",
+                      "ParentFlowPropertyM": {
+                        "$ref": "67"
+                      },
+                      "Id": "fb6e5266-1af5-4304-a6ec-19943f28abb8"
+                    },
+                    "Id": "7fc42d76-53ca-4693-b636-c747d3fdac1a"
+                  },
+                  {
+                    "$id": "70",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                    "Key": "Y",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "63"
+                    },
+                    "InputConnector": {
+                      "$id": "71",
+                      "ParentFlowPropertyM": {
+                        "$ref": "70"
+                      },
+                      "Direction": "Input",
+                      "Id": "764a011b-8677-40d5-99f8-24032ac3b601"
+                    },
+                    "OutputConnector": {
+                      "$id": "72",
+                      "ParentFlowPropertyM": {
+                        "$ref": "70"
+                      },
+                      "Id": "38d7da89-ae55-4af2-821a-c2007e7ad3d7"
+                    },
+                    "Id": "7c21fe07-4fa6-4940-9b76-fa7d09f77982"
+                  }
+                ],
+                "Key": "Position",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "59"
+                },
+                "Id": "66914741-1c96-41c7-b795-5a9d9c1a815a"
+              },
+              {
+                "$id": "73",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "74",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                    "CaptureType": "Rectangle",
+                    "Key": "Position",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "73"
+                    },
+                    "InputConnector": {
+                      "$id": "75",
+                      "ParentFlowPropertyM": {
+                        "$ref": "74"
+                      },
+                      "Direction": "Input",
+                      "Id": "d18b51e4-a3ec-4446-bcb8-f9dd0901c6e7"
+                    },
+                    "OutputConnector": {
+                      "$id": "76",
+                      "ParentFlowPropertyM": {
+                        "$ref": "74"
+                      },
+                      "Id": "340d5aac-5095-4600-889b-c2c8ac77c4b7"
+                    },
+                    "Id": "91fc4da5-c634-43c3-b79e-d4f621841857"
+                  },
+                  {
+                    "$id": "77",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                    "Key": "X",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "73"
+                    },
+                    "InputConnector": {
+                      "$id": "78",
+                      "ParentFlowPropertyM": {
+                        "$ref": "77"
+                      },
+                      "Direction": "Input",
+                      "Id": "d039f332-a941-40d5-8ab5-4fa9b7e49c83"
+                    },
+                    "OutputConnector": {
+                      "$id": "79",
+                      "ParentFlowPropertyM": {
+                        "$ref": "77"
+                      },
+                      "Id": "04cd1b60-b554-4742-a7e5-b38a56a49831"
+                    },
+                    "Id": "c9ec2a78-96ff-4bef-8c93-3e4df0814b09"
+                  },
+                  {
+                    "$id": "80",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                    "Key": "Y",
+                    "ParentBuildingBlock": {
+                      "$ref": "10"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "73"
+                    },
+                    "InputConnector": {
+                      "$id": "81",
+                      "ParentFlowPropertyM": {
+                        "$ref": "80"
+                      },
+                      "Direction": "Input",
+                      "Id": "02c21eee-42a6-40d8-b6b4-cb88a845313b"
+                    },
+                    "OutputConnector": {
+                      "$id": "82",
+                      "ParentFlowPropertyM": {
+                        "$ref": "80"
+                      },
+                      "Id": "0520316a-c4d4-491e-ae32-ab7fc1b282a8"
+                    },
+                    "Id": "3e461178-cbd6-45e0-be34-ffde8629a558"
+                  }
+                ],
+                "Key": "Size",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "59"
+                },
+                "Id": "f1eb33fd-69de-4a21-be66-24e68ace6a54"
+              }
+            ],
+            "Key": "AreaBlock",
+            "ParentBuildingBlock": {
+              "$ref": "10"
+            },
+            "Id": "58ac1c6d-b69c-48a3-a7f5-637dd561fff6"
+          },
+          {
+            "$id": "83",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.DictionaryContentBlockFlowProperty, LeapTest.Models",
+            "DictionaryKey": "UseOccurrence",
+            "FlowProperties": [
+              {
+                "$id": "84",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+                "DictionaryKey": "UseOccurrence",
+                "Key": "UseOccurrence",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "83"
+                },
+                "EditorValue": {
+                  "$id": "85",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                  "Value": "1"
+                },
+                "DefaultValue": {
+                  "$ref": "85"
+                },
+                "Id": "36281184-1059-4e81-9229-6e8ea7225564"
+              },
+              {
+                "$id": "86",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                "Key": "CurrentIndex",
+                "IsMain": true,
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "83"
+                },
+                "OutputConnector": {
+                  "$id": "87",
+                  "ParentFlowPropertyM": {
+                    "$ref": "86"
+                  },
+                  "Id": "8ea7e8ef-29d6-4181-932a-0df4efe834c3"
+                },
+                "Id": "52664fde-cc1a-42c0-9109-d229c15c7214"
+              },
+              {
+                "$id": "88",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.SignalFlowProperty, LeapTest.Models",
+                "Key": "Completed",
+                "PropertyType": "Execution",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "83"
+                },
+                "OutputConnector": {
+                  "$id": "89",
+                  "ParentFlowPropertyM": {
+                    "$ref": "88"
+                  },
+                  "Id": "61f61722-f2c1-4d9a-961d-ee18c69d1338"
+                },
+                "CanHaveValue": false,
+                "Id": "9719f9d0-2107-4404-bd21-ea4f6d1fe5e3"
+              }
+            ],
+            "Key": "UseOccuranceBlock",
+            "ParentBuildingBlock": {
+              "$ref": "10"
+            },
+            "CanHaveValue": false,
+            "Id": "67c29769-be5a-4462-902e-28bc4df1522e"
+          },
+          {
+            "$id": "90",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+            "Key": "Timeout",
+            "ParentBuildingBlock": {
+              "$ref": "10"
+            },
+            "InputConnector": {
+              "$id": "91",
+              "ParentFlowPropertyM": {
+                "$ref": "90"
+              },
+              "Direction": "Input",
+              "Id": "c60b4501-8977-4fdf-8180-a9cede27bd5a"
+            },
+            "OutputConnector": {
+              "$id": "92",
+              "ParentFlowPropertyM": {
+                "$ref": "90"
+              },
+              "Id": "0419ab02-e42a-4225-9f1f-2fe43a7d153c"
+            },
+            "EditorValue": {
+              "$id": "93",
+              "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+              "Value": 5.0
+            },
+            "DefaultValue": {
+              "$id": "94",
+              "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+              "Value": 10.0
+            },
+            "Id": "83085f63-952b-4a57-bdac-5a129f03a2fe"
+          },
+          {
+            "$id": "95",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.DictionaryContentBlockFlowProperty, LeapTest.Models",
+            "DictionaryKey": "ScrollDirection",
+            "FlowProperties": [
+              {
+                "$id": "96",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+                "DictionaryKey": "ExtendedDirectionVertical",
+                "Key": "ScrollDirection",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "95"
+                },
+                "EditorValue": {
+                  "$id": "97",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                  "Value": "None"
+                },
+                "DefaultValue": {
+                  "$ref": "97"
+                },
+                "Id": "8c3a14c3-694d-4cdd-b3c1-b4b3cde939d5"
+              },
+              {
+                "$id": "98",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                "Key": "RepeatTimes",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "95"
+                },
+                "InputConnector": {
+                  "$id": "99",
+                  "ParentFlowPropertyM": {
+                    "$ref": "98"
+                  },
+                  "Direction": "Input",
+                  "Id": "e74a373b-c041-4c7a-8e84-34376e47cf2d"
+                },
+                "OutputConnector": {
+                  "$id": "100",
+                  "ParentFlowPropertyM": {
+                    "$ref": "98"
+                  },
+                  "Id": "6e5c620f-8466-449f-a343-0f67385b2947"
+                },
+                "EditorValue": {
+                  "$id": "101",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+                  "Value": 10.0
+                },
+                "DefaultValue": {
+                  "$ref": "101"
+                },
+                "Id": "24f34d79-f14c-4bf5-81b4-ce6c8dcfcf47"
+              },
+              {
+                "$id": "102",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                "Key": "Amount",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "95"
+                },
+                "InputConnector": {
+                  "$id": "103",
+                  "ParentFlowPropertyM": {
+                    "$ref": "102"
+                  },
+                  "Direction": "Input",
+                  "Id": "6a0385fd-d1ee-4703-9fcc-68ba9b6c06f5"
+                },
+                "OutputConnector": {
+                  "$id": "104",
+                  "ParentFlowPropertyM": {
+                    "$ref": "102"
+                  },
+                  "Id": "a6aa9750-2c77-4dac-8b0e-41de01c6e6b7"
+                },
+                "EditorValue": {
+                  "$id": "105",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+                  "Value": 3.0
+                },
+                "DefaultValue": {
+                  "$ref": "105"
+                },
+                "Id": "81a8b382-1298-41aa-9069-50673778b2b2"
+              },
+              {
+                "$id": "106",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                "Key": "Delay",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "95"
+                },
+                "InputConnector": {
+                  "$id": "107",
+                  "ParentFlowPropertyM": {
+                    "$ref": "106"
+                  },
+                  "Direction": "Input",
+                  "Id": "b623c7ea-1f00-49b2-92a1-d07b913e70cb"
+                },
+                "OutputConnector": {
+                  "$id": "108",
+                  "ParentFlowPropertyM": {
+                    "$ref": "106"
+                  },
+                  "Id": "f03fcad8-75eb-4ea7-985a-47c6af45b5c0"
+                },
+                "EditorValue": {
+                  "$id": "109",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+                  "Value": 0.5
+                },
+                "DefaultValue": {
+                  "$ref": "109"
+                },
+                "Id": "a7d4386b-b72f-44a4-bfa7-3f7901c79977"
+              }
+            ],
+            "Key": "ScrollBlock",
+            "ParentBuildingBlock": {
+              "$ref": "10"
+            },
+            "CanHaveValue": false,
+            "Id": "ff4f9e15-2fdf-4ee5-a77a-0a203cf932d7"
+          },
+          {
+            "$id": "110",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.BooleanNumberBlockFlowProperty, LeapTest.Models",
+            "FlowProperties": [
+              {
+                "$id": "111",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.BooleanFlowProperty, LeapTest.Models",
+                "Key": "WaitNoMovement",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "110"
+                },
+                "InputConnector": {
+                  "$id": "112",
+                  "ParentFlowPropertyM": {
+                    "$ref": "111"
+                  },
+                  "Direction": "Input",
+                  "Id": "b84db21c-a7c2-449e-9790-f97f716b8e04"
+                },
+                "OutputConnector": {
+                  "$id": "113",
+                  "ParentFlowPropertyM": {
+                    "$ref": "111"
+                  },
+                  "Id": "0dda3d06-b43b-4e2f-8f7a-44725515df53"
+                },
+                "EditorValue": {
+                  "$id": "114",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LBoolean, LeapTest.Models"
+                },
+                "Id": "6555b355-b5bc-4978-b062-68352744cce5"
+              },
+              {
+                "$id": "115",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                "Key": "NoMovementTimeout",
+                "ParentBuildingBlock": {
+                  "$ref": "10"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "110"
+                },
+                "InputConnector": {
+                  "$id": "116",
+                  "ParentFlowPropertyM": {
+                    "$ref": "115"
+                  },
+                  "Direction": "Input",
+                  "Id": "6283d8fe-b684-4eaa-a6ce-92314cd85363"
+                },
+                "OutputConnector": {
+                  "$id": "117",
+                  "ParentFlowPropertyM": {
+                    "$ref": "115"
+                  },
+                  "Id": "f35669a3-7194-48b1-aec9-ea419aa71587"
+                },
+                "EditorValue": {
+                  "$id": "118",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+                  "Value": 3.0
+                },
+                "DefaultValue": {
+                  "$ref": "118"
+                },
+                "Id": "bef362b6-3572-43f4-a76d-0c1f1576b7e5"
+              }
+            ],
+            "NumberPropertyKey": "NoMovementTimeout",
+            "BooleanPropertyKey": "WaitNoMovement",
+            "Key": "NoMovement",
+            "ParentBuildingBlock": {
+              "$ref": "10"
+            },
+            "CanHaveValue": false,
+            "Id": "2002895e-a4d9-489a-80dd-99fcf6b207be"
+          }
+        ],
+        "Height": 725.0,
+        "Width": 150.0,
+        "IsExpanded": true,
+        "Title": "Click image",
+        "CreatedAt": "2017-08-11T06:10:07.052903",
+        "ModifiedAt": "2017-08-11T06:10:07.052903",
+        "Id": "88165cad-d178-47c4-8c10-f47d321df331"
+      },
+      {
+        "$id": "119",
+        "$type": "LeapTest.Models.Models.BuildingBlocks.Find.FindImageBuildingBlockM, LeapTest.Models",
+        "Position": "5590,5000",
+        "FlowProperties": [
+          {
+            "$id": "120",
+            "$type": "LeapTest.Models.Models.FlowProperties.HeaderFlowProperty, LeapTest.Models",
+            "Title": "Find image",
+            "Key": "Header",
+            "PropertyType": "Execution",
+            "ParentBuildingBlock": {
+              "$ref": "119"
+            },
+            "InputConnector": {
+              "$id": "121",
+              "ParentFlowPropertyM": {
+                "$ref": "120"
+              },
+              "Direction": "Input",
+              "connectedIds": [
+                {
+                  "$id": "122",
+                  "Item1": "88165cad-d178-47c4-8c10-f47d321df331",
+                  "Item2": "a9eec8e2-101a-4370-a4e0-8bd11f3c082c"
+                }
+              ],
+              "Id": "4c6cb44b-87b0-4cf6-888c-409af882489f"
+            },
+            "OutputConnector": {
+              "$id": "123",
+              "ParentFlowPropertyM": {
+                "$ref": "120"
+              },
+              "connectedIds": [
+                {
+                  "$id": "124",
+                  "Item1": "91f55750-629d-4439-ad44-2fd0cddfd15e",
+                  "Item2": "3c24a10a-78c3-43c2-ab45-6c8dd48d95d8"
+                }
+              ],
+              "Id": "2726bec8-6433-4379-a12b-e639e6f6141e"
+            },
+            "CanHaveValue": false,
+            "Id": "645b1851-48ee-4958-9dac-67e28ef29ec7"
+          },
+          {
+            "$id": "125",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.ImageFlowProperty, LeapTest.Models",
+            "Key": "Image",
+            "IsMain": true,
+            "ParentBuildingBlock": {
+              "$ref": "119"
+            },
+            "InputConnector": {
+              "$id": "126",
+              "ParentFlowPropertyM": {
+                "$ref": "125"
+              },
+              "Direction": "Input",
+              "Id": "0bfea29d-ee71-4b8b-a691-b5553c28baf5"
+            },
+            "OutputConnector": {
+              "$id": "127",
+              "ParentFlowPropertyM": {
+                "$ref": "125"
+              },
+              "Id": "91838f72-6f9e-45a1-8d34-508105df3f3b"
+            },
+            "EditorValue": {
+              "$id": "128",
+              "$type": "LeapTest.Models.Models.LDataTypes.LImage, LeapTest.Models",
+              "ClickPoint": "68,20.5",
+              "Value": "ab748cdc-fe41-4731-9beb-fe3ce70025e6"
+            },
+            "Id": "0acce768-f382-430c-9a9f-e3ea8dfe2f90"
+          },
+          {
+            "$id": "129",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.SignalFlowProperty, LeapTest.Models",
+            "Key": "NotFound",
+            "PropertyType": "Execution",
+            "ParentBuildingBlock": {
+              "$ref": "119"
+            },
+            "OutputConnector": {
+              "$id": "130",
+              "ParentFlowPropertyM": {
+                "$ref": "129"
+              },
+              "Id": "07f38ffd-0fff-4ddd-81b4-a25b5fe2c27b"
+            },
+            "CanHaveValue": false,
+            "Id": "cfd6e01e-e624-401f-84eb-7ddbb2672e37"
+          },
+          {
+            "$id": "131",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+            "FlowProperties": [
+              {
+                "$id": "132",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                "IsResult": true,
+                "Key": "Position",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "131"
+                },
+                "OutputConnector": {
+                  "$id": "133",
+                  "ParentFlowPropertyM": {
+                    "$ref": "132"
+                  },
+                  "Id": "501cdf58-3521-4a27-9e7b-ccbc01bd4b56"
+                },
+                "Id": "421d79c5-04d9-4019-bc17-4f9efe838d1a"
+              },
+              {
+                "$id": "134",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                "Key": "X",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "131"
+                },
+                "OutputConnector": {
+                  "$id": "135",
+                  "ParentFlowPropertyM": {
+                    "$ref": "134"
+                  },
+                  "Id": "3b409c91-aa97-4996-bcae-97fa564bf186"
+                },
+                "Id": "36862a18-61c3-4b85-9e70-f54c9d3267af"
+              },
+              {
+                "$id": "136",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                "Key": "Y",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "131"
+                },
+                "OutputConnector": {
+                  "$id": "137",
+                  "ParentFlowPropertyM": {
+                    "$ref": "136"
+                  },
+                  "Id": "d010d27b-86b6-4074-be97-9da6059e1b4f"
+                },
+                "Id": "82e09cc1-8b6d-4c33-a855-506ef6b7042c"
+              }
+            ],
+            "Key": "ResultPositionBlock",
+            "ParentBuildingBlock": {
+              "$ref": "119"
+            },
+            "Id": "3bc127b4-a607-499f-afff-7744b50871c1"
+          },
+          {
+            "$id": "138",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.AreaBlockFlowProperty, LeapTest.Models",
+            "FlowProperties": [
+              {
+                "$id": "139",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.AreaFlowProperty, LeapTest.Models",
+                "IsResult": true,
+                "Key": "Area",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "138"
+                },
+                "OutputConnector": {
+                  "$id": "140",
+                  "ParentFlowPropertyM": {
+                    "$ref": "139"
+                  },
+                  "Id": "f53cbaec-1ca7-4bee-a0e9-d5748300610a"
+                },
+                "Id": "0247c203-0c64-4b48-b2ea-6699514f86da"
+              },
+              {
+                "$id": "141",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "142",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                    "IsResult": true,
+                    "Key": "Position",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "141"
+                    },
+                    "OutputConnector": {
+                      "$id": "143",
+                      "ParentFlowPropertyM": {
+                        "$ref": "142"
+                      },
+                      "Id": "daa3a1d7-9ce1-4080-8898-d4a6a19c47c9"
+                    },
+                    "Id": "2508fa0b-551c-401d-918f-ca11487d8c3d"
+                  },
+                  {
+                    "$id": "144",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                    "Key": "X",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "141"
+                    },
+                    "OutputConnector": {
+                      "$id": "145",
+                      "ParentFlowPropertyM": {
+                        "$ref": "144"
+                      },
+                      "Id": "c2824c7a-092d-44d7-ab70-6c19c9909450"
+                    },
+                    "Id": "524f6d69-16df-40a5-8afd-cebd2c1a609c"
+                  },
+                  {
+                    "$id": "146",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                    "Key": "Y",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "141"
+                    },
+                    "OutputConnector": {
+                      "$id": "147",
+                      "ParentFlowPropertyM": {
+                        "$ref": "146"
+                      },
+                      "Id": "a5620e52-d796-44f7-b56d-0ba0a8079f12"
+                    },
+                    "Id": "918e6698-23b7-4ff8-b1f6-751b1ca133f8"
+                  }
+                ],
+                "Key": "Position",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "138"
+                },
+                "Id": "cf6e464c-7ca7-489c-be8f-0f5dcc2e1e15"
+              },
+              {
+                "$id": "148",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "149",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                    "IsResult": true,
+                    "CaptureType": "Rectangle",
+                    "Key": "Position",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "148"
+                    },
+                    "OutputConnector": {
+                      "$id": "150",
+                      "ParentFlowPropertyM": {
+                        "$ref": "149"
+                      },
+                      "Id": "92b000f6-a8df-4843-9175-2b27722a2e04"
+                    },
+                    "Id": "88cdc386-d0cc-4caf-b3fc-35ba7c4d673c"
+                  },
+                  {
+                    "$id": "151",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                    "Key": "X",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "148"
+                    },
+                    "OutputConnector": {
+                      "$id": "152",
+                      "ParentFlowPropertyM": {
+                        "$ref": "151"
+                      },
+                      "Id": "9a7f4c3f-e98d-4d43-be3a-63faab9d27df"
+                    },
+                    "Id": "1a6a8962-b03b-41e9-a0fe-5156732c44a3"
+                  },
+                  {
+                    "$id": "153",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                    "Key": "Y",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "148"
+                    },
+                    "OutputConnector": {
+                      "$id": "154",
+                      "ParentFlowPropertyM": {
+                        "$ref": "153"
+                      },
+                      "Id": "4cde4977-b835-45d6-96fb-39c336e0003d"
+                    },
+                    "Id": "1c0977bf-ff71-4b2a-9725-78491d357907"
+                  }
+                ],
+                "Key": "Size",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "138"
+                },
+                "Id": "20dcb134-6518-4e88-80d0-6e0d969bb7e3"
+              }
+            ],
+            "Key": "ResultAreaBlock",
+            "ParentBuildingBlock": {
+              "$ref": "119"
+            },
+            "Id": "fb21ee0a-bd85-4c1b-8013-44a4a10c4598"
+          },
+          {
+            "$id": "155",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.ImagePrecisionBlockFlowProperty, LeapTest.Models",
+            "FlowProperties": [
+              {
+                "$id": "156",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.ImagePixelsPrecisionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "157",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+                    "DictionaryKey": "ImageRecognitionPixelPrecisions",
+                    "Key": "PixelsPrecision",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "156"
+                    },
+                    "EditorValue": {
+                      "$id": "158",
+                      "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                      "Value": "PixelPerfect"
+                    },
+                    "DefaultValue": {
+                      "$ref": "158"
+                    },
+                    "Id": "884b4c9a-c5bb-4728-977f-74c60ef08c1a"
+                  }
+                ],
+                "Key": "ImagePixelsPrecision",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "155"
+                },
+                "Id": "3952ca01-de85-4849-bfe9-2fda208c7ca6"
+              },
+              {
+                "$id": "159",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.ImageColorPrecisionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "160",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+                    "DictionaryKey": "ImageRecognitionColorPrecisions",
+                    "Key": "ColorPrecision",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "159"
+                    },
+                    "EditorValue": {
+                      "$id": "161",
+                      "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                      "Value": "PixelPerfect"
+                    },
+                    "DefaultValue": {
+                      "$ref": "161"
+                    },
+                    "Id": "23a41fb9-5ef5-4d34-916c-69976072d27a"
+                  }
+                ],
+                "Key": "ImageColorPrecision",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "155"
+                },
+                "Id": "5b0ddc03-93e9-469b-93c0-4a24025e2313"
+              }
+            ],
+            "Key": "ImagePrecision",
+            "ParentBuildingBlock": {
+              "$ref": "119"
+            },
+            "CanHaveValue": false,
+            "Id": "e08ea35f-79d4-4baa-8a50-63c0fa835bcc"
+          },
+          {
+            "$id": "162",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.AreaBlockFlowProperty, LeapTest.Models",
+            "FlowProperties": [
+              {
+                "$id": "163",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.AreaFlowProperty, LeapTest.Models",
+                "Key": "Area",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "162"
+                },
+                "InputConnector": {
+                  "$id": "164",
+                  "ParentFlowPropertyM": {
+                    "$ref": "163"
+                  },
+                  "Direction": "Input",
+                  "Id": "c4eff41f-fa00-4aa4-a4a4-631137ec673c"
+                },
+                "OutputConnector": {
+                  "$id": "165",
+                  "ParentFlowPropertyM": {
+                    "$ref": "163"
+                  },
+                  "Id": "c2366c3f-78a9-4c4d-97bc-7066bf8744f8"
+                },
+                "Id": "c4fc1fc1-ee64-4ef4-95c3-a157e00b641b"
+              },
+              {
+                "$id": "166",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "167",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                    "Key": "Position",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "166"
+                    },
+                    "InputConnector": {
+                      "$id": "168",
+                      "ParentFlowPropertyM": {
+                        "$ref": "167"
+                      },
+                      "Direction": "Input",
+                      "Id": "673be267-7e28-4cc2-aa3a-0c304c87fbd9"
+                    },
+                    "OutputConnector": {
+                      "$id": "169",
+                      "ParentFlowPropertyM": {
+                        "$ref": "167"
+                      },
+                      "Id": "3a570f37-dd53-44d2-bcea-b876e7f47951"
+                    },
+                    "Id": "dde6c33a-2d82-44c3-8266-3ee9b149a66d"
+                  },
+                  {
+                    "$id": "170",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                    "Key": "X",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "166"
+                    },
+                    "InputConnector": {
+                      "$id": "171",
+                      "ParentFlowPropertyM": {
+                        "$ref": "170"
+                      },
+                      "Direction": "Input",
+                      "Id": "5339ae70-f201-4e73-93a8-45cd9e6fe9fa"
+                    },
+                    "OutputConnector": {
+                      "$id": "172",
+                      "ParentFlowPropertyM": {
+                        "$ref": "170"
+                      },
+                      "Id": "0c5ed833-dfc9-4be0-a739-d41b3be39d41"
+                    },
+                    "Id": "b9bc221a-31e2-4c71-9de4-073deaa29452"
+                  },
+                  {
+                    "$id": "173",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                    "Key": "Y",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "166"
+                    },
+                    "InputConnector": {
+                      "$id": "174",
+                      "ParentFlowPropertyM": {
+                        "$ref": "173"
+                      },
+                      "Direction": "Input",
+                      "Id": "25d9dba5-5409-4105-a2e6-cfcd14248c63"
+                    },
+                    "OutputConnector": {
+                      "$id": "175",
+                      "ParentFlowPropertyM": {
+                        "$ref": "173"
+                      },
+                      "Id": "7a594364-768e-4a8b-961e-096561cb45d1"
+                    },
+                    "Id": "ed4c3120-43ff-465c-a071-81bac15bcc13"
+                  }
+                ],
+                "Key": "Position",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "162"
+                },
+                "Id": "f2c872fe-57e0-434c-968e-670eec10dc65"
+              },
+              {
+                "$id": "176",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "177",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                    "CaptureType": "Rectangle",
+                    "Key": "Position",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "176"
+                    },
+                    "InputConnector": {
+                      "$id": "178",
+                      "ParentFlowPropertyM": {
+                        "$ref": "177"
+                      },
+                      "Direction": "Input",
+                      "Id": "a4807e5f-d8ef-4a45-bc7e-db25e2818386"
+                    },
+                    "OutputConnector": {
+                      "$id": "179",
+                      "ParentFlowPropertyM": {
+                        "$ref": "177"
+                      },
+                      "Id": "4c954999-12ad-459d-be94-0d2eadc8e8ed"
+                    },
+                    "Id": "e3c455b1-f0b3-4df3-ba0b-33bcd3b27f22"
+                  },
+                  {
+                    "$id": "180",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                    "Key": "X",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "176"
+                    },
+                    "InputConnector": {
+                      "$id": "181",
+                      "ParentFlowPropertyM": {
+                        "$ref": "180"
+                      },
+                      "Direction": "Input",
+                      "Id": "6489de12-11a1-425b-941f-8b6838b5f66c"
+                    },
+                    "OutputConnector": {
+                      "$id": "182",
+                      "ParentFlowPropertyM": {
+                        "$ref": "180"
+                      },
+                      "Id": "816d05c5-aea1-4922-b7f9-4e83a5d5a0b5"
+                    },
+                    "Id": "31311f22-5660-47b3-ac7f-c80efd123236"
+                  },
+                  {
+                    "$id": "183",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                    "Key": "Y",
+                    "ParentBuildingBlock": {
+                      "$ref": "119"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "176"
+                    },
+                    "InputConnector": {
+                      "$id": "184",
+                      "ParentFlowPropertyM": {
+                        "$ref": "183"
+                      },
+                      "Direction": "Input",
+                      "Id": "66ec9435-6fd8-4cb5-84cc-b7f15ec2eab0"
+                    },
+                    "OutputConnector": {
+                      "$id": "185",
+                      "ParentFlowPropertyM": {
+                        "$ref": "183"
+                      },
+                      "Id": "a3971b4b-738b-4bf1-a514-fca993015a22"
+                    },
+                    "Id": "77aa95e2-e15a-4292-a4a5-7f12c098922b"
+                  }
+                ],
+                "Key": "Size",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "162"
+                },
+                "Id": "47261afe-c5e9-4c29-a04b-b411acef9317"
+              }
+            ],
+            "Key": "AreaBlock",
+            "ParentBuildingBlock": {
+              "$ref": "119"
+            },
+            "Id": "ddc2304e-909f-4196-9e67-7d764a122f40"
+          },
+          {
+            "$id": "186",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.DictionaryContentBlockFlowProperty, LeapTest.Models",
+            "DictionaryKey": "UseOccurrence",
+            "FlowProperties": [
+              {
+                "$id": "187",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+                "DictionaryKey": "UseOccurrence",
+                "Key": "UseOccurrence",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "186"
+                },
+                "EditorValue": {
+                  "$id": "188",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                  "Value": "1"
+                },
+                "DefaultValue": {
+                  "$ref": "188"
+                },
+                "Id": "2adb80fe-4afa-416a-849b-7740b32cf8a1"
+              },
+              {
+                "$id": "189",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                "Key": "CurrentIndex",
+                "IsMain": true,
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "186"
+                },
+                "OutputConnector": {
+                  "$id": "190",
+                  "ParentFlowPropertyM": {
+                    "$ref": "189"
+                  },
+                  "Id": "700b6491-fd56-4e42-9f79-5ae78a989969"
+                },
+                "Id": "7e9f3adf-c878-4403-820e-8be3fdc67315"
+              },
+              {
+                "$id": "191",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.SignalFlowProperty, LeapTest.Models",
+                "Key": "Completed",
+                "PropertyType": "Execution",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "186"
+                },
+                "OutputConnector": {
+                  "$id": "192",
+                  "ParentFlowPropertyM": {
+                    "$ref": "191"
+                  },
+                  "Id": "f5c003a9-d78c-4c9e-8410-e53ac2c72920"
+                },
+                "CanHaveValue": false,
+                "Id": "26412530-b1e8-4e0a-8cc2-e30bf92126e4"
+              }
+            ],
+            "Key": "UseOccuranceBlock",
+            "ParentBuildingBlock": {
+              "$ref": "119"
+            },
+            "CanHaveValue": false,
+            "Id": "7d40e70c-9f25-460b-a797-45d997d514cc"
+          },
+          {
+            "$id": "193",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+            "Key": "Timeout",
+            "ParentBuildingBlock": {
+              "$ref": "119"
+            },
+            "InputConnector": {
+              "$id": "194",
+              "ParentFlowPropertyM": {
+                "$ref": "193"
+              },
+              "Direction": "Input",
+              "Id": "e252bdbe-1b5f-46ab-8daf-54ab681abc27"
+            },
+            "OutputConnector": {
+              "$id": "195",
+              "ParentFlowPropertyM": {
+                "$ref": "193"
+              },
+              "Id": "bfdc3caf-dfe4-4ee3-9503-c507c96936de"
+            },
+            "EditorValue": {
+              "$id": "196",
+              "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+              "Value": 10.0
+            },
+            "DefaultValue": {
+              "$ref": "196"
+            },
+            "Id": "2dbfbc20-236f-4a85-be1d-290c96542a34"
+          },
+          {
+            "$id": "197",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.DictionaryContentBlockFlowProperty, LeapTest.Models",
+            "DictionaryKey": "ScrollDirection",
+            "FlowProperties": [
+              {
+                "$id": "198",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+                "DictionaryKey": "ExtendedDirectionVertical",
+                "Key": "ScrollDirection",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "197"
+                },
+                "EditorValue": {
+                  "$id": "199",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                  "Value": "None"
+                },
+                "DefaultValue": {
+                  "$ref": "199"
+                },
+                "Id": "fec9b214-d903-4129-9a30-ac4f36bcccdb"
+              },
+              {
+                "$id": "200",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                "Key": "RepeatTimes",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "197"
+                },
+                "InputConnector": {
+                  "$id": "201",
+                  "ParentFlowPropertyM": {
+                    "$ref": "200"
+                  },
+                  "Direction": "Input",
+                  "Id": "944d6c2b-8421-41fe-a18f-d715358c1ba0"
+                },
+                "OutputConnector": {
+                  "$id": "202",
+                  "ParentFlowPropertyM": {
+                    "$ref": "200"
+                  },
+                  "Id": "22fdc536-3a55-4400-be8a-64d0ee0613e3"
+                },
+                "EditorValue": {
+                  "$id": "203",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+                  "Value": 10.0
+                },
+                "DefaultValue": {
+                  "$ref": "203"
+                },
+                "Id": "d6e38f8f-beef-4cca-8768-50becd92f724"
+              },
+              {
+                "$id": "204",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                "Key": "Amount",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "197"
+                },
+                "InputConnector": {
+                  "$id": "205",
+                  "ParentFlowPropertyM": {
+                    "$ref": "204"
+                  },
+                  "Direction": "Input",
+                  "Id": "effaab25-af20-4f64-9730-16dd045bb22a"
+                },
+                "OutputConnector": {
+                  "$id": "206",
+                  "ParentFlowPropertyM": {
+                    "$ref": "204"
+                  },
+                  "Id": "a06d3d80-e8ee-4d9f-959a-532ecef0d09c"
+                },
+                "EditorValue": {
+                  "$id": "207",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+                  "Value": 3.0
+                },
+                "DefaultValue": {
+                  "$ref": "207"
+                },
+                "Id": "249b8d36-7ead-4385-bf26-ef8f99232492"
+              },
+              {
+                "$id": "208",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                "Key": "Delay",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "197"
+                },
+                "InputConnector": {
+                  "$id": "209",
+                  "ParentFlowPropertyM": {
+                    "$ref": "208"
+                  },
+                  "Direction": "Input",
+                  "Id": "c76bf3e2-7e0f-4bb5-88db-49d100c94f69"
+                },
+                "OutputConnector": {
+                  "$id": "210",
+                  "ParentFlowPropertyM": {
+                    "$ref": "208"
+                  },
+                  "Id": "9a45789d-d936-4f3f-a608-bfaee20159d6"
+                },
+                "EditorValue": {
+                  "$id": "211",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+                  "Value": 0.5
+                },
+                "DefaultValue": {
+                  "$ref": "211"
+                },
+                "Id": "a095e89f-63db-46a3-9f8f-a1aaee02c51c"
+              }
+            ],
+            "Key": "ScrollBlock",
+            "ParentBuildingBlock": {
+              "$ref": "119"
+            },
+            "CanHaveValue": false,
+            "Id": "5c5b709c-ba28-4589-b234-86e50abd9a90"
+          },
+          {
+            "$id": "212",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.BooleanNumberBlockFlowProperty, LeapTest.Models",
+            "FlowProperties": [
+              {
+                "$id": "213",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.BooleanFlowProperty, LeapTest.Models",
+                "Key": "WaitNoMovement",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "212"
+                },
+                "InputConnector": {
+                  "$id": "214",
+                  "ParentFlowPropertyM": {
+                    "$ref": "213"
+                  },
+                  "Direction": "Input",
+                  "Id": "80f0f952-56d1-4afc-994e-908b8871897f"
+                },
+                "OutputConnector": {
+                  "$id": "215",
+                  "ParentFlowPropertyM": {
+                    "$ref": "213"
+                  },
+                  "Id": "5f015546-be18-45a5-b9c7-0fd604cb8566"
+                },
+                "EditorValue": {
+                  "$id": "216",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LBoolean, LeapTest.Models"
+                },
+                "Id": "235050f2-bf20-45b1-97ee-b694750e628b"
+              },
+              {
+                "$id": "217",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                "Key": "NoMovementTimeout",
+                "ParentBuildingBlock": {
+                  "$ref": "119"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "212"
+                },
+                "InputConnector": {
+                  "$id": "218",
+                  "ParentFlowPropertyM": {
+                    "$ref": "217"
+                  },
+                  "Direction": "Input",
+                  "Id": "5fec9546-bb67-46f0-9abf-458ae330bac7"
+                },
+                "OutputConnector": {
+                  "$id": "219",
+                  "ParentFlowPropertyM": {
+                    "$ref": "217"
+                  },
+                  "Id": "4b7b2561-3f25-4154-b4ae-34266251cba5"
+                },
+                "EditorValue": {
+                  "$id": "220",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+                  "Value": 3.0
+                },
+                "DefaultValue": {
+                  "$ref": "220"
+                },
+                "Id": "07b1209c-916a-4ec7-b04c-dabf8f94af91"
+              }
+            ],
+            "NumberPropertyKey": "NoMovementTimeout",
+            "BooleanPropertyKey": "WaitNoMovement",
+            "Key": "NoMovement",
+            "ParentBuildingBlock": {
+              "$ref": "119"
+            },
+            "CanHaveValue": false,
+            "Id": "ff7f6b88-bdce-4c92-b4d9-ad28fcb66394"
+          },
+          {
+            "$id": "221",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.BooleanFlowProperty, LeapTest.Models",
+            "Key": "WaitNotFound",
+            "ParentBuildingBlock": {
+              "$ref": "119"
+            },
+            "InputConnector": {
+              "$id": "222",
+              "ParentFlowPropertyM": {
+                "$ref": "221"
+              },
+              "Direction": "Input",
+              "Id": "4690fb9e-0e77-4d1b-9eb9-381e6e5bb0e4"
+            },
+            "OutputConnector": {
+              "$id": "223",
+              "ParentFlowPropertyM": {
+                "$ref": "221"
+              },
+              "Id": "b9bb5751-e0c2-4dc5-930c-93b67416ce36"
+            },
+            "EditorValue": {
+              "$id": "224",
+              "$type": "LeapTest.Models.Models.LDataTypes.LBoolean, LeapTest.Models"
+            },
+            "Id": "a90604b1-0a3d-4ee3-9732-a209446f12e5"
+          }
+        ],
+        "Height": 134.0,
+        "Width": 150.0,
+        "Title": "Find image",
+        "CreatedAt": "2017-08-11T08:08:13.7995441",
+        "ModifiedAt": "2017-08-11T08:08:13.7995441",
+        "Id": "1db2ae6d-d5a3-46f7-8360-99c00975c100"
+      },
+      {
+        "$id": "225",
+        "$type": "LeapTest.Models.Models.BuildingBlocks.Mouse.ClickImageBuildingBlockM, LeapTest.Models",
+        "Position": "5790,5000",
+        "FlowProperties": [
+          {
+            "$id": "226",
+            "$type": "LeapTest.Models.Models.FlowProperties.HeaderFlowProperty, LeapTest.Models",
+            "Title": "Click image",
+            "Key": "Header",
+            "PropertyType": "Execution",
+            "ParentBuildingBlock": {
+              "$ref": "225"
+            },
+            "InputConnector": {
+              "$id": "227",
+              "ParentFlowPropertyM": {
+                "$ref": "226"
+              },
+              "Direction": "Input",
+              "connectedIds": [
+                {
+                  "$id": "228",
+                  "Item1": "1db2ae6d-d5a3-46f7-8360-99c00975c100",
+                  "Item2": "2726bec8-6433-4379-a12b-e639e6f6141e"
+                }
+              ],
+              "Id": "3c24a10a-78c3-43c2-ab45-6c8dd48d95d8"
+            },
+            "OutputConnector": {
+              "$id": "229",
+              "ParentFlowPropertyM": {
+                "$ref": "226"
+              },
+              "connectedIds": [
+                {
+                  "$id": "230",
+                  "Item1": "745f0e97-2089-45a3-a1bc-fd51a3ac9a75",
+                  "Item2": "14ccd069-6062-4a04-971c-1f1b95cfe112"
+                }
+              ],
+              "Id": "ca386523-6dca-43c7-b489-b1a7acc7b9c8"
+            },
+            "CanHaveValue": false,
+            "Id": "4a430acf-ab12-4a6c-a7e9-6b9934b80a89"
+          },
+          {
+            "$id": "231",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.ImageFlowProperty, LeapTest.Models",
+            "Key": "Image",
+            "IsMain": true,
+            "ParentBuildingBlock": {
+              "$ref": "225"
+            },
+            "InputConnector": {
+              "$id": "232",
+              "ParentFlowPropertyM": {
+                "$ref": "231"
+              },
+              "Direction": "Input",
+              "Id": "66f1424a-c290-41eb-bfd3-5bb2c14a6071"
+            },
+            "OutputConnector": {
+              "$id": "233",
+              "ParentFlowPropertyM": {
+                "$ref": "231"
+              },
+              "Id": "a467313b-b499-4673-9205-71c1d1a95576"
+            },
+            "EditorValue": {
+              "$id": "234",
+              "$type": "LeapTest.Models.Models.LDataTypes.LImage, LeapTest.Models",
+              "ClickPoint": "27,18",
+              "Value": "2c48b835-d585-427e-9010-7daabe1f5d6f"
+            },
+            "Id": "853f0b60-16a2-497f-b660-85971d9bcd80"
+          },
+          {
+            "$id": "235",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+            "DictionaryKey": "MouseButtons",
+            "Key": "MouseButton",
+            "ParentBuildingBlock": {
+              "$ref": "225"
+            },
+            "EditorValue": {
+              "$id": "236",
+              "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+              "Value": "Left"
+            },
+            "DefaultValue": {
+              "$ref": "236"
+            },
+            "Id": "019666ed-2e86-497c-b4d1-abdd7da5c85d"
+          },
+          {
+            "$id": "237",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+            "DictionaryKey": "MouseSpeed",
+            "Key": "MouseSpeed",
+            "ParentBuildingBlock": {
+              "$ref": "225"
+            },
+            "EditorValue": {
+              "$id": "238",
+              "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+              "Value": "Medium"
+            },
+            "DefaultValue": {
+              "$ref": "238"
+            },
+            "Id": "84a8e6c9-3d48-4175-aa60-7c4df3e3e772"
+          },
+          {
+            "$id": "239",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.SignalFlowProperty, LeapTest.Models",
+            "Key": "NotFound",
+            "PropertyType": "Execution",
+            "ParentBuildingBlock": {
+              "$ref": "225"
+            },
+            "OutputConnector": {
+              "$id": "240",
+              "ParentFlowPropertyM": {
+                "$ref": "239"
+              },
+              "Id": "f95e73b3-d189-4ae7-aa4a-e4edd1242128"
+            },
+            "CanHaveValue": false,
+            "Id": "660e1281-4285-4ab2-bf4a-70cfdb605a44"
+          },
+          {
+            "$id": "241",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+            "FlowProperties": [
+              {
+                "$id": "242",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                "IsResult": true,
+                "Key": "Position",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "241"
+                },
+                "OutputConnector": {
+                  "$id": "243",
+                  "ParentFlowPropertyM": {
+                    "$ref": "242"
+                  },
+                  "Id": "bdb32a4d-f13e-4242-8158-5045e04d4042"
+                },
+                "Id": "ad2ef4f9-d640-4210-b16e-71573860e8b5"
+              },
+              {
+                "$id": "244",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                "Key": "X",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "241"
+                },
+                "OutputConnector": {
+                  "$id": "245",
+                  "ParentFlowPropertyM": {
+                    "$ref": "244"
+                  },
+                  "Id": "0b1cf990-793f-4d34-8fb4-e9be3abe7d8e"
+                },
+                "Id": "49b6b7c0-826c-40ad-b66e-2f2da096e33d"
+              },
+              {
+                "$id": "246",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                "Key": "Y",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "241"
+                },
+                "OutputConnector": {
+                  "$id": "247",
+                  "ParentFlowPropertyM": {
+                    "$ref": "246"
+                  },
+                  "Id": "a5bdf2d7-5004-4637-8374-d1b71168bbb5"
+                },
+                "Id": "cb466a49-f00e-499f-ada1-6c2d49211b24"
+              }
+            ],
+            "Key": "ResultPositionBlock",
+            "ParentBuildingBlock": {
+              "$ref": "225"
+            },
+            "Id": "a9edbd58-ea8e-4d9b-8391-229af2b29578"
+          },
+          {
+            "$id": "248",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.AreaBlockFlowProperty, LeapTest.Models",
+            "FlowProperties": [
+              {
+                "$id": "249",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.AreaFlowProperty, LeapTest.Models",
+                "IsResult": true,
+                "Key": "Area",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "248"
+                },
+                "OutputConnector": {
+                  "$id": "250",
+                  "ParentFlowPropertyM": {
+                    "$ref": "249"
+                  },
+                  "Id": "99b1ee2d-1efe-4ecb-a828-f93c96b59863"
+                },
+                "Id": "4558a3b7-14d6-4e94-8685-c436db20cbf7"
+              },
+              {
+                "$id": "251",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "252",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                    "IsResult": true,
+                    "Key": "Position",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "251"
+                    },
+                    "OutputConnector": {
+                      "$id": "253",
+                      "ParentFlowPropertyM": {
+                        "$ref": "252"
+                      },
+                      "Id": "92ed5bb1-3309-4089-8f66-c43ad76499e3"
+                    },
+                    "Id": "1e9034b6-c747-4640-8f89-1d85fe74f06e"
+                  },
+                  {
+                    "$id": "254",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                    "Key": "X",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "251"
+                    },
+                    "OutputConnector": {
+                      "$id": "255",
+                      "ParentFlowPropertyM": {
+                        "$ref": "254"
+                      },
+                      "Id": "612889fe-94ac-4b9d-82d3-d2ffa63f370e"
+                    },
+                    "Id": "e689db46-b6c5-4fb4-9845-e2e610738c06"
+                  },
+                  {
+                    "$id": "256",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                    "Key": "Y",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "251"
+                    },
+                    "OutputConnector": {
+                      "$id": "257",
+                      "ParentFlowPropertyM": {
+                        "$ref": "256"
+                      },
+                      "Id": "b326421c-b289-48f5-bdad-9fe4186369df"
+                    },
+                    "Id": "1ffe011b-4c48-4a29-a3ac-e8a14076d5b1"
+                  }
+                ],
+                "Key": "Position",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "248"
+                },
+                "Id": "dc462b3e-4e71-4ff3-bdc8-7192ed0f0534"
+              },
+              {
+                "$id": "258",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "259",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                    "IsResult": true,
+                    "CaptureType": "Rectangle",
+                    "Key": "Position",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "258"
+                    },
+                    "OutputConnector": {
+                      "$id": "260",
+                      "ParentFlowPropertyM": {
+                        "$ref": "259"
+                      },
+                      "Id": "fb1c73c2-9b88-4f96-9633-78ef3ec5a492"
+                    },
+                    "Id": "332c4591-7b93-4804-88ae-7b8284f909b5"
+                  },
+                  {
+                    "$id": "261",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                    "Key": "X",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "258"
+                    },
+                    "OutputConnector": {
+                      "$id": "262",
+                      "ParentFlowPropertyM": {
+                        "$ref": "261"
+                      },
+                      "Id": "4625bda9-8a34-4057-8295-cb3df877cae5"
+                    },
+                    "Id": "36b848e6-fac2-4a3e-9269-84404418bb9a"
+                  },
+                  {
+                    "$id": "263",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                    "Key": "Y",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "258"
+                    },
+                    "OutputConnector": {
+                      "$id": "264",
+                      "ParentFlowPropertyM": {
+                        "$ref": "263"
+                      },
+                      "Id": "d248d26e-ace1-4960-9006-b64ed8ca71ce"
+                    },
+                    "Id": "7f9a93e4-da11-4d3d-80a3-85f305947f29"
+                  }
+                ],
+                "Key": "Size",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "248"
+                },
+                "Id": "4747ad6a-7640-443a-9704-7576d2b9f7c8"
+              }
+            ],
+            "Key": "ResultAreaBlock",
+            "ParentBuildingBlock": {
+              "$ref": "225"
+            },
+            "Id": "67b4eeb8-369e-498e-a4a6-90ddc88ce46f"
+          },
+          {
+            "$id": "265",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.ImagePrecisionBlockFlowProperty, LeapTest.Models",
+            "IsExpanded": true,
+            "FlowProperties": [
+              {
+                "$id": "266",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.ImagePixelsPrecisionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "267",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+                    "DictionaryKey": "ImageRecognitionPixelPrecisions",
+                    "Key": "PixelsPrecision",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "266"
+                    },
+                    "EditorValue": {
+                      "$id": "268",
+                      "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                      "Value": "PixelPerfect"
+                    },
+                    "DefaultValue": {
+                      "$id": "269",
+                      "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                      "Value": "PixelPerfect"
+                    },
+                    "Id": "212d9c22-1d92-4bff-b797-25100e695f39"
+                  }
+                ],
+                "Key": "ImagePixelsPrecision",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "265"
+                },
+                "Id": "3cca29cb-4fac-4ee7-8cc9-11761c37e814"
+              },
+              {
+                "$id": "270",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.ImageColorPrecisionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "271",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+                    "DictionaryKey": "ImageRecognitionColorPrecisions",
+                    "Key": "ColorPrecision",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "270"
+                    },
+                    "EditorValue": {
+                      "$id": "272",
+                      "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                      "Value": "High"
+                    },
+                    "DefaultValue": {
+                      "$id": "273",
+                      "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                      "Value": "PixelPerfect"
+                    },
+                    "Id": "3b271507-3e11-4e38-9af7-05ff1eb90abb"
+                  }
+                ],
+                "Key": "ImageColorPrecision",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "265"
+                },
+                "Id": "e0db92dd-3e1f-4c2e-bbd3-86c9bfbc6de5"
+              }
+            ],
+            "Key": "ImagePrecision",
+            "ParentBuildingBlock": {
+              "$ref": "225"
+            },
+            "CanHaveValue": false,
+            "Id": "126e162b-1c24-4696-96d2-3f026698c865"
+          },
+          {
+            "$id": "274",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.AreaBlockFlowProperty, LeapTest.Models",
+            "FlowProperties": [
+              {
+                "$id": "275",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.AreaFlowProperty, LeapTest.Models",
+                "Key": "Area",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "274"
+                },
+                "InputConnector": {
+                  "$id": "276",
+                  "ParentFlowPropertyM": {
+                    "$ref": "275"
+                  },
+                  "Direction": "Input",
+                  "Id": "6158fcab-8144-4fd6-be8a-63d8a1c703ec"
+                },
+                "OutputConnector": {
+                  "$id": "277",
+                  "ParentFlowPropertyM": {
+                    "$ref": "275"
+                  },
+                  "Id": "d6f62a94-70d7-4f82-abdc-a240d48a0ee8"
+                },
+                "Id": "c94f5a7b-44e1-4248-91b0-a2b08f1745cb"
+              },
+              {
+                "$id": "278",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "279",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                    "Key": "Position",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "278"
+                    },
+                    "InputConnector": {
+                      "$id": "280",
+                      "ParentFlowPropertyM": {
+                        "$ref": "279"
+                      },
+                      "Direction": "Input",
+                      "Id": "14a935a2-66ec-40f4-814d-836bebb0a5a4"
+                    },
+                    "OutputConnector": {
+                      "$id": "281",
+                      "ParentFlowPropertyM": {
+                        "$ref": "279"
+                      },
+                      "Id": "3caa7abf-b740-4993-a74d-108ae101644a"
+                    },
+                    "Id": "98323c71-10d8-4e06-94b9-58774feba72e"
+                  },
+                  {
+                    "$id": "282",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                    "Key": "X",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "278"
+                    },
+                    "InputConnector": {
+                      "$id": "283",
+                      "ParentFlowPropertyM": {
+                        "$ref": "282"
+                      },
+                      "Direction": "Input",
+                      "Id": "f32d8090-a541-42eb-8ca0-91b599c71366"
+                    },
+                    "OutputConnector": {
+                      "$id": "284",
+                      "ParentFlowPropertyM": {
+                        "$ref": "282"
+                      },
+                      "Id": "4cf91a61-9869-406b-ac45-f2ab09ec1c71"
+                    },
+                    "Id": "a219230c-d6fa-4fcf-837b-bf2f46e6fc88"
+                  },
+                  {
+                    "$id": "285",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                    "Key": "Y",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "278"
+                    },
+                    "InputConnector": {
+                      "$id": "286",
+                      "ParentFlowPropertyM": {
+                        "$ref": "285"
+                      },
+                      "Direction": "Input",
+                      "Id": "77623877-b625-4314-a2f5-5a2a3cc72ac3"
+                    },
+                    "OutputConnector": {
+                      "$id": "287",
+                      "ParentFlowPropertyM": {
+                        "$ref": "285"
+                      },
+                      "Id": "01f5bac4-d655-4787-9d0c-3764d9113569"
+                    },
+                    "Id": "0bda7c53-0af0-4d9f-98d5-d0c63a244423"
+                  }
+                ],
+                "Key": "Position",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "274"
+                },
+                "Id": "31eb03d1-834c-415d-8722-630cce55522d"
+              },
+              {
+                "$id": "288",
+                "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.PositionBlockFlowProperty, LeapTest.Models",
+                "FlowProperties": [
+                  {
+                    "$id": "289",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.PositionFlowProperty, LeapTest.Models",
+                    "CaptureType": "Rectangle",
+                    "Key": "Position",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "288"
+                    },
+                    "InputConnector": {
+                      "$id": "290",
+                      "ParentFlowPropertyM": {
+                        "$ref": "289"
+                      },
+                      "Direction": "Input",
+                      "Id": "d8536eb7-02be-4d76-a382-0758fe534b94"
+                    },
+                    "OutputConnector": {
+                      "$id": "291",
+                      "ParentFlowPropertyM": {
+                        "$ref": "289"
+                      },
+                      "Id": "fb1e1908-f1ea-448d-b0df-f04087d83b7e"
+                    },
+                    "Id": "ed391d39-1b40-41bf-af1d-14730db7f9ca"
+                  },
+                  {
+                    "$id": "292",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                    "Key": "X",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "288"
+                    },
+                    "InputConnector": {
+                      "$id": "293",
+                      "ParentFlowPropertyM": {
+                        "$ref": "292"
+                      },
+                      "Direction": "Input",
+                      "Id": "f44b9b13-aff1-445c-9d51-8f00e669f5e7"
+                    },
+                    "OutputConnector": {
+                      "$id": "294",
+                      "ParentFlowPropertyM": {
+                        "$ref": "292"
+                      },
+                      "Id": "db85dd07-5c1b-419d-aef1-11853aab867a"
+                    },
+                    "Id": "b8aaab11-f133-4732-bc56-9c5bc4d93f65"
+                  },
+                  {
+                    "$id": "295",
+                    "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                    "Key": "Y",
+                    "ParentBuildingBlock": {
+                      "$ref": "225"
+                    },
+                    "ParentFlowProperty": {
+                      "$ref": "288"
+                    },
+                    "InputConnector": {
+                      "$id": "296",
+                      "ParentFlowPropertyM": {
+                        "$ref": "295"
+                      },
+                      "Direction": "Input",
+                      "Id": "16a86e16-a8ca-4fe3-854a-c536166878f2"
+                    },
+                    "OutputConnector": {
+                      "$id": "297",
+                      "ParentFlowPropertyM": {
+                        "$ref": "295"
+                      },
+                      "Id": "d3fbd5de-9b4d-491d-a7f4-31bb6fa01c71"
+                    },
+                    "Id": "11156f5b-b0ea-4360-b52e-9dd9ec60d606"
+                  }
+                ],
+                "Key": "Size",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "274"
+                },
+                "Id": "2f53aa94-db8a-4947-87e4-62c1fae8a3bb"
+              }
+            ],
+            "Key": "AreaBlock",
+            "ParentBuildingBlock": {
+              "$ref": "225"
+            },
+            "Id": "1982c29c-3f35-4d5a-85f3-0a36088e217e"
+          },
+          {
+            "$id": "298",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.DictionaryContentBlockFlowProperty, LeapTest.Models",
+            "DictionaryKey": "UseOccurrence",
+            "FlowProperties": [
+              {
+                "$id": "299",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+                "DictionaryKey": "UseOccurrence",
+                "Key": "UseOccurrence",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "298"
+                },
+                "EditorValue": {
+                  "$id": "300",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                  "Value": "1"
+                },
+                "DefaultValue": {
+                  "$ref": "300"
+                },
+                "Id": "5f3d5072-b79b-4e11-acb3-04366e8c262d"
+              },
+              {
+                "$id": "301",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberResultFlowProperty, LeapTest.Models",
+                "Key": "CurrentIndex",
+                "IsMain": true,
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "298"
+                },
+                "OutputConnector": {
+                  "$id": "302",
+                  "ParentFlowPropertyM": {
+                    "$ref": "301"
+                  },
+                  "Id": "6e1d6192-8f13-47b0-9378-0157bc087916"
+                },
+                "Id": "89a4b7bf-678a-47a4-ba4b-3e8b767ffd18"
+              },
+              {
+                "$id": "303",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.SignalFlowProperty, LeapTest.Models",
+                "Key": "Completed",
+                "PropertyType": "Execution",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "298"
+                },
+                "OutputConnector": {
+                  "$id": "304",
+                  "ParentFlowPropertyM": {
+                    "$ref": "303"
+                  },
+                  "Id": "a304e2fc-176a-4122-8230-fd296968d08b"
+                },
+                "CanHaveValue": false,
+                "Id": "375024d7-fc78-4904-b36f-1e8b5a15423d"
+              }
+            ],
+            "Key": "UseOccuranceBlock",
+            "ParentBuildingBlock": {
+              "$ref": "225"
+            },
+            "CanHaveValue": false,
+            "Id": "e41fbb66-0841-4df3-9f22-cfe187085152"
+          },
+          {
+            "$id": "305",
+            "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+            "Key": "Timeout",
+            "ParentBuildingBlock": {
+              "$ref": "225"
+            },
+            "InputConnector": {
+              "$id": "306",
+              "ParentFlowPropertyM": {
+                "$ref": "305"
+              },
+              "Direction": "Input",
+              "Id": "cf84bd98-8fcf-42a5-b0fd-00768985810c"
+            },
+            "OutputConnector": {
+              "$id": "307",
+              "ParentFlowPropertyM": {
+                "$ref": "305"
+              },
+              "Id": "55a97be3-a3c6-40f5-8b8b-6fb8945bc547"
+            },
+            "EditorValue": {
+              "$id": "308",
+              "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+              "Value": 5.0
+            },
+            "DefaultValue": {
+              "$id": "309",
+              "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+              "Value": 10.0
+            },
+            "Id": "fd207c5c-9f81-4199-b0b6-171eb21ccef0"
+          },
+          {
+            "$id": "310",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.DictionaryContentBlockFlowProperty, LeapTest.Models",
+            "DictionaryKey": "ScrollDirection",
+            "FlowProperties": [
+              {
+                "$id": "311",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.DictionaryFlowProperty, LeapTest.Models",
+                "DictionaryKey": "ExtendedDirectionVertical",
+                "Key": "ScrollDirection",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "310"
+                },
+                "EditorValue": {
+                  "$id": "312",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LText, LeapTest.Models",
+                  "Value": "None"
+                },
+                "DefaultValue": {
+                  "$ref": "312"
+                },
+                "Id": "5c037ad6-6140-423d-8f20-0f95d9e79335"
+              },
+              {
+                "$id": "313",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                "Key": "RepeatTimes",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "310"
+                },
+                "InputConnector": {
+                  "$id": "314",
+                  "ParentFlowPropertyM": {
+                    "$ref": "313"
+                  },
+                  "Direction": "Input",
+                  "Id": "82d178c9-48d3-46e5-b2cc-44c26d23b4d6"
+                },
+                "OutputConnector": {
+                  "$id": "315",
+                  "ParentFlowPropertyM": {
+                    "$ref": "313"
+                  },
+                  "Id": "a0591240-a81d-4adb-882e-23b844962377"
+                },
+                "EditorValue": {
+                  "$id": "316",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+                  "Value": 10.0
+                },
+                "DefaultValue": {
+                  "$ref": "316"
+                },
+                "Id": "ac2dc7d6-5520-446a-88f5-7555a424df59"
+              },
+              {
+                "$id": "317",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                "Key": "Amount",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "310"
+                },
+                "InputConnector": {
+                  "$id": "318",
+                  "ParentFlowPropertyM": {
+                    "$ref": "317"
+                  },
+                  "Direction": "Input",
+                  "Id": "da1d160f-e62d-440e-ab3e-30c15bf5aefa"
+                },
+                "OutputConnector": {
+                  "$id": "319",
+                  "ParentFlowPropertyM": {
+                    "$ref": "317"
+                  },
+                  "Id": "9c7e7fa5-b8d2-4732-9edb-9070c1518f4f"
+                },
+                "EditorValue": {
+                  "$id": "320",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+                  "Value": 3.0
+                },
+                "DefaultValue": {
+                  "$ref": "320"
+                },
+                "Id": "7c0d88a3-23b7-45d3-809a-7276acc4c1af"
+              },
+              {
+                "$id": "321",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                "Key": "Delay",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "310"
+                },
+                "InputConnector": {
+                  "$id": "322",
+                  "ParentFlowPropertyM": {
+                    "$ref": "321"
+                  },
+                  "Direction": "Input",
+                  "Id": "cf0a2319-0893-443c-a013-14b9d62eda21"
+                },
+                "OutputConnector": {
+                  "$id": "323",
+                  "ParentFlowPropertyM": {
+                    "$ref": "321"
+                  },
+                  "Id": "10fa99cd-0e12-45ea-95f6-e9c8c52c0ff3"
+                },
+                "EditorValue": {
+                  "$id": "324",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+                  "Value": 0.5
+                },
+                "DefaultValue": {
+                  "$ref": "324"
+                },
+                "Id": "36ca6aee-95e8-4157-9f49-26fd4d5fc77f"
+              }
+            ],
+            "Key": "ScrollBlock",
+            "ParentBuildingBlock": {
+              "$ref": "225"
+            },
+            "CanHaveValue": false,
+            "Id": "b97db543-78f0-4a68-8a19-25657d06a51b"
+          },
+          {
+            "$id": "325",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.BooleanNumberBlockFlowProperty, LeapTest.Models",
+            "FlowProperties": [
+              {
+                "$id": "326",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.BooleanFlowProperty, LeapTest.Models",
+                "Key": "WaitNoMovement",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "325"
+                },
+                "InputConnector": {
+                  "$id": "327",
+                  "ParentFlowPropertyM": {
+                    "$ref": "326"
+                  },
+                  "Direction": "Input",
+                  "Id": "b1635fe8-c502-4c21-86aa-6389700e11b8"
+                },
+                "OutputConnector": {
+                  "$id": "328",
+                  "ParentFlowPropertyM": {
+                    "$ref": "326"
+                  },
+                  "Id": "78440143-00a7-4d22-a723-267445f2b50d"
+                },
+                "EditorValue": {
+                  "$id": "329",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LBoolean, LeapTest.Models"
+                },
+                "Id": "b7e6ff37-dbc8-46df-ae9f-24c918598c37"
+              },
+              {
+                "$id": "330",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.NumberFlowProperty, LeapTest.Models",
+                "Key": "NoMovementTimeout",
+                "ParentBuildingBlock": {
+                  "$ref": "225"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "325"
+                },
+                "InputConnector": {
+                  "$id": "331",
+                  "ParentFlowPropertyM": {
+                    "$ref": "330"
+                  },
+                  "Direction": "Input",
+                  "Id": "a39e53cd-5e73-4a43-9189-54f7eaafbd90"
+                },
+                "OutputConnector": {
+                  "$id": "332",
+                  "ParentFlowPropertyM": {
+                    "$ref": "330"
+                  },
+                  "Id": "ec9ee8db-a6a3-4b1f-94b7-2c6118750dca"
+                },
+                "EditorValue": {
+                  "$id": "333",
+                  "$type": "LeapTest.Models.Models.LDataTypes.LNumber, LeapTest.Models",
+                  "Value": 3.0
+                },
+                "DefaultValue": {
+                  "$ref": "333"
+                },
+                "Id": "6de30843-e918-46f5-a4d9-3483b096317a"
+              }
+            ],
+            "NumberPropertyKey": "NoMovementTimeout",
+            "BooleanPropertyKey": "WaitNoMovement",
+            "Key": "NoMovement",
+            "ParentBuildingBlock": {
+              "$ref": "225"
+            },
+            "CanHaveValue": false,
+            "Id": "165b68a7-3032-4734-8214-65d850b1c80f"
+          }
+        ],
+        "Height": 711.0,
+        "Width": 150.0,
+        "IsExpanded": true,
+        "Title": "Click image",
+        "CreatedAt": "2017-08-11T06:10:07.052903",
+        "ModifiedAt": "2017-08-11T06:10:07.052903",
+        "Id": "91f55750-629d-4439-ad44-2fd0cddfd15e"
+      },
+      {
+        "$id": "334",
+        "$type": "LeapTest.Models.Models.BuildingBlocks.Miscellaneous.PassBuildingBlockM, LeapTest.Models",
+        "Position": "5970,5130",
+        "FlowProperties": [
+          {
+            "$id": "335",
+            "$type": "LeapTest.Models.Models.FlowProperties.HeaderFlowProperty, LeapTest.Models",
+            "Title": "Pass",
+            "Key": "Header",
+            "PropertyType": "Execution",
+            "ParentBuildingBlock": {
+              "$ref": "334"
+            },
+            "InputConnector": {
+              "$id": "336",
+              "ParentFlowPropertyM": {
+                "$ref": "335"
+              },
+              "Direction": "Input",
+              "connectedIds": [
+                {
+                  "$id": "337",
+                  "Item1": "91f55750-629d-4439-ad44-2fd0cddfd15e",
+                  "Item2": "ca386523-6dca-43c7-b489-b1a7acc7b9c8"
+                }
+              ],
+              "Id": "14ccd069-6062-4a04-971c-1f1b95cfe112"
+            },
+            "CanHaveValue": false,
+            "Id": "0c9cc9c9-d444-4ffe-893d-abf198459e60"
+          },
+          {
+            "$id": "338",
+            "$type": "LeapTest.Models.Models.FlowProperties.BlockFlowProperties.TypeTextBlockFlowProperty, LeapTest.Models",
+            "IsAddFieldVisible": true,
+            "FlowProperties": [
+              {
+                "$id": "339",
+                "$type": "LeapTest.Models.Models.FlowProperties.DataTypeFlowProperties.TokenizedTextFlowProperty, LeapTest.Models",
+                "Key": "TokenizedText",
+                "ParentBuildingBlock": {
+                  "$ref": "334"
+                },
+                "ParentFlowProperty": {
+                  "$ref": "338"
+                },
+                "InputConnector": {
+                  "$id": "340",
+                  "ParentFlowPropertyM": {
+                    "$ref": "339"
+                  },
+                  "Direction": "Input",
+                  "Id": "bbcd09d1-3bb3-4bd3-9ba5-9fef8541def8"
+                },
+                "Id": "9b1b1846-1cda-4fe5-825e-085cb3d92233"
+              }
+            ],
+            "Key": "Text",
+            "ParentBuildingBlock": {
+              "$ref": "334"
+            },
+            "Id": "cdcbe6cb-27b2-43a8-9195-b5077be70912"
+          }
+        ],
+        "Height": 71.0,
+        "Width": 150.0,
+        "Title": "Pass",
+        "CreatedAt": "2017-08-11T08:08:51.242288",
+        "ModifiedAt": "2017-08-11T08:08:51.242288",
+        "Id": "745f0e97-2089-45a3-a1bc-fd51a3ac9a75"
+      },
+      {
+        "$id": "341",
+        "$type": "LeapTest.Models.Models.BuildingBlocks.Module.CustomBuildingBlockM, LeapTest.Models",
+        "TemplateId": "d24622ff-b209-429c-a4d7-bb8212790d9f",
+        "Position": "5190,5000",
+        "FlowProperties": [
+          {
+            "$id": "342",
+            "$type": "LeapTest.Models.Models.FlowProperties.ModuleHeaderFlowProperty, LeapTest.Models",
+            "Title": "Check if program running",
+            "Key": "Header",
+            "PropertyType": "Execution",
+            "ParentBuildingBlock": {
+              "$ref": "341"
+            },
+            "CanHaveValue": false,
+            "Id": "5d160af2-ff92-47df-bffd-23d051c344d7"
+          },
+          {
+            "$id": "343",
+            "$type": "LeapTest.Models.Models.FlowProperties.ModuleOutputFlowProperty, LeapTest.Models",
+            "TemplateId": "715053a1-1e8c-4d93-b1ae-bc45404b68e3",
+            "Title": "Execution Output",
+            "Key": "ModuleOutput",
+            "PropertyType": "Execution",
+            "ParentBuildingBlock": {
+              "$ref": "341"
+            },
+            "InputConnector": {
+              "$id": "344",
+              "ParentFlowPropertyM": {
+                "$ref": "343"
+              },
+              "Direction": "Input",
+              "Id": "62e68977-1f7b-42f7-aa2e-9888b5032077"
+            },
+            "OutputConnector": {
+              "$id": "345",
+              "ParentFlowPropertyM": {
+                "$ref": "343"
+              },
+              "connectedIds": [
+                {
+                  "$id": "346",
+                  "Item1": "88165cad-d178-47c4-8c10-f47d321df331",
+                  "Item2": "0f0e07e5-4bda-4c11-9d8a-74c8501f6677"
+                }
+              ],
+              "Id": "0541290b-4049-4da3-8c90-a9f1b1388dc0"
+            },
+            "Id": "9242a3ca-48e5-4f59-aba0-e9fc76390bc2"
+          },
+          {
+            "$id": "347",
+            "$type": "LeapTest.Models.Models.FlowProperties.ModuleInputFlowProperty, LeapTest.Models",
+            "TemplateId": "f1a48339-df6a-4122-bda8-30eb63a681e7",
+            "Title": "Execution Input",
+            "Key": "ModuleInput",
+            "PropertyType": "Execution",
+            "ParentBuildingBlock": {
+              "$ref": "341"
+            },
+            "InputConnector": {
+              "$id": "348",
+              "ParentFlowPropertyM": {
+                "$ref": "347"
+              },
+              "Direction": "Input",
+              "connectedIds": [
+                {
+                  "$id": "349",
+                  "Item1": "f17bd483-f6bd-42e3-a803-97a131796208",
+                  "Item2": "e8e64d81-35c2-4ffc-8bfe-c685e299c212"
+                }
+              ],
+              "Id": "7c68acc6-2a31-464a-adbb-63a1a72f9f4e"
+            },
+            "OutputConnector": {
+              "$id": "350",
+              "ParentFlowPropertyM": {
+                "$ref": "347"
+              },
+              "Id": "55f221eb-6f41-405c-8777-fc43f715c805"
+            },
+            "Id": "cfc63168-4bd0-4ef5-8ab1-f4cc816f24d0"
+          }
+        ],
+        "Height": 58.0,
+        "Width": 150.0,
+        "Title": "Check if program running",
+        "CreatedAt": "2017-08-11T09:28:06.3622464",
+        "ModifiedAt": "2017-08-11T09:28:06.3622464",
+        "Id": "0e1f69d3-bf88-46dd-aca5-27f6484b307a"
+      }
+    ],
+    "ZoomFactor": 90.0,
+    "Position": "-4455,-4455",
+    "Size": "10000,10000",
+    "CreatedAt": "2017-08-11T11:02:17.8978441",
+    "ModifiedAt": "2017-08-11T11:02:17.8978441",
+    "Id": "dd9921b0-cc8a-422a-9d2e-f23130e88889"
+  },
+  "LastRun": "2017-08-11T11:50:18.4415324",
+  "LastStatus": "Passed",
+  "RunTime": "00:00:27.8130730",
+  "IsFailedUnlessPassed": true,
+  "TimeOut": 600,
+  "Title": "Machine test",
+  "CreatedAt": "2017-08-11T11:02:17.8978441",
+  "ModifiedAt": "2017-08-11T11:02:17.8978441",
+  "SortOrder": 14.0,
+  "Id": "06bde2cb-8bef-42bf-9986-56edfb4ab114"
+}
